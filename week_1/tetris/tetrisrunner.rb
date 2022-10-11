@@ -1,7 +1,7 @@
 # University of Washington, Programming Languages, Homework 6, hw6runner.rb
 
-require_relative './hw6provided.rb'
-require_relative './hw6assignment.rb'
+require_relative './tetrisprovided.rb'
+require_relative './tetrisassignment.rb'
 
 def runTetris
   Tetris.new 
@@ -16,11 +16,11 @@ end
 if ARGV.count == 0
   runMyTetris
 elsif ARGV.count != 1
-  puts "usage: hw6runner.rb [enhanced | original]"
+  puts "usage: tetrisrunner.rb [enhanced | original]"
 elsif ARGV[0] == "enhanced"
   runMyTetris
 elsif ARGV[0] == "original"
   runTetris
 else
-  puts "usage: hw6runner.rb [enhanced | original]"
+  puts "usage: tetrisrunner.rb [enhanced | original]"
 end

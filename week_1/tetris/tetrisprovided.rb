@@ -1,7 +1,7 @@
 # University of Washington: Programming Languages
 # Homework 6: A working Tetris game you will extend without breaking.
 
-require_relative './hw6graphics'
+require_relative './tetrisgraphics'
 
 # class responsible for the pieces and their movements
 class Piece 
